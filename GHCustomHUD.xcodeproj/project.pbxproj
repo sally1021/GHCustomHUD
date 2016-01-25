@@ -15,6 +15,10 @@
 		3A1427DF1C55C81F000F40B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1427DD1C55C81F000F40B7 /* LaunchScreen.storyboard */; };
 		3A1427EA1C55C820000F40B7 /* GHCustomHUDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1427E91C55C820000F40B7 /* GHCustomHUDTests.m */; };
 		3A1427F51C55C820000F40B7 /* GHCustomHUDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1427F41C55C820000F40B7 /* GHCustomHUDUITests.m */; };
+		3A1428051C55C85D000F40B7 /* CustomHudView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1428031C55C85D000F40B7 /* CustomHudView.m */; };
+		3A1428061C55C85D000F40B7 /* CustomHudView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A1428041C55C85D000F40B7 /* CustomHudView.xib */; };
+		3A1428091C55C983000F40B7 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1428081C55C983000F40B7 /* UIView+Extension.m */; };
+		3A14280C1C55D4DA000F40B7 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A14280B1C55D4DA000F40B7 /* loading.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		3A1427F01C55C820000F40B7 /* GHCustomHUDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GHCustomHUDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A1427F41C55C820000F40B7 /* GHCustomHUDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHCustomHUDUITests.m; sourceTree = "<group>"; };
 		3A1427F61C55C820000F40B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A1428021C55C85D000F40B7 /* CustomHudView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHudView.h; sourceTree = "<group>"; };
+		3A1428031C55C85D000F40B7 /* CustomHudView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHudView.m; sourceTree = "<group>"; };
+		3A1428041C55C85D000F40B7 /* CustomHudView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomHudView.xib; sourceTree = "<group>"; };
+		3A1428071C55C983000F40B7 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		3A1428081C55C983000F40B7 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		3A14280B1C55D4DA000F40B7 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +115,11 @@
 				3A1427D31C55C81F000F40B7 /* AppDelegate.m */,
 				3A1427D51C55C81F000F40B7 /* ViewController.h */,
 				3A1427D61C55C81F000F40B7 /* ViewController.m */,
+				3A1428021C55C85D000F40B7 /* CustomHudView.h */,
+				3A1428031C55C85D000F40B7 /* CustomHudView.m */,
+				3A1428041C55C85D000F40B7 /* CustomHudView.xib */,
+				3A1428071C55C983000F40B7 /* UIView+Extension.h */,
+				3A1428081C55C983000F40B7 /* UIView+Extension.m */,
 				3A1427D81C55C81F000F40B7 /* Main.storyboard */,
 				3A1427DB1C55C81F000F40B7 /* Assets.xcassets */,
 				3A1427DD1C55C81F000F40B7 /* LaunchScreen.storyboard */,
@@ -118,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				3A1427D01C55C81F000F40B7 /* main.m */,
+				3A14280B1C55D4DA000F40B7 /* loading.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -243,7 +259,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A14280C1C55D4DA000F40B7 /* loading.png in Resources */,
 				3A1427DF1C55C81F000F40B7 /* LaunchScreen.storyboard in Resources */,
+				3A1428061C55C85D000F40B7 /* CustomHudView.xib in Resources */,
 				3A1427DC1C55C81F000F40B7 /* Assets.xcassets in Resources */,
 				3A1427DA1C55C81F000F40B7 /* Main.storyboard in Resources */,
 			);
@@ -270,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A1428091C55C983000F40B7 /* UIView+Extension.m in Sources */,
 				3A1427D71C55C81F000F40B7 /* ViewController.m in Sources */,
+				3A1428051C55C85D000F40B7 /* CustomHudView.m in Sources */,
 				3A1427D41C55C81F000F40B7 /* AppDelegate.m in Sources */,
 				3A1427D11C55C81F000F40B7 /* main.m in Sources */,
 			);

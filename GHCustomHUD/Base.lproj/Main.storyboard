@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,128 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2RW-ET-4wM">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ux-m2-1CF">
+                                        <rect key="frame" x="85" y="181" width="98" height="30"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="ebu-cr-Eni"/>
+                                            <constraint firstAttribute="width" constant="98" id="jH6-qP-rS9"/>
+                                        </constraints>
+                                        <state key="normal" title="显示 in view"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="ebu-cr-Eni"/>
+                                                <exclude reference="jH6-qP-rS9"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="ebu-cr-Eni"/>
+                                                <include reference="jH6-qP-rS9"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="showInView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vwz-n6-qH5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyS-od-Y1K">
+                                        <rect key="frame" x="85" y="345" width="98" height="30"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="BA5-Ia-NHj"/>
+                                            <constraint firstAttribute="width" constant="98" id="HKB-7j-3bi"/>
+                                        </constraints>
+                                        <state key="normal" title="显示 in vc"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="BA5-Ia-NHj"/>
+                                                <exclude reference="HKB-7j-3bi"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="BA5-Ia-NHj"/>
+                                                <include reference="HKB-7j-3bi"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="showInVc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9VQ-OD-rtE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="2jT-42-1hz"/>
+                                    <constraint firstItem="4Ux-m2-1CF" firstAttribute="top" secondItem="2RW-ET-4wM" secondAttribute="top" id="8be-WN-pd2"/>
+                                    <constraint firstItem="SyS-od-Y1K" firstAttribute="centerX" secondItem="2RW-ET-4wM" secondAttribute="centerX" id="Om9-7C-2nm"/>
+                                    <constraint firstAttribute="bottom" secondItem="SyS-od-Y1K" secondAttribute="bottom" id="RSb-hZ-Bdd"/>
+                                    <constraint firstAttribute="height" constant="194" id="dDr-Yo-RPZ"/>
+                                    <constraint firstItem="4Ux-m2-1CF" firstAttribute="centerX" secondItem="2RW-ET-4wM" secondAttribute="centerX" id="wso-7H-xmI"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="4Ux-m2-1CF"/>
+                                        <exclude reference="SyS-od-Y1K"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="2jT-42-1hz"/>
+                                        <exclude reference="dDr-Yo-RPZ"/>
+                                        <exclude reference="8be-WN-pd2"/>
+                                        <exclude reference="wso-7H-xmI"/>
+                                        <exclude reference="Om9-7C-2nm"/>
+                                        <exclude reference="RSb-hZ-Bdd"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="4Ux-m2-1CF"/>
+                                        <include reference="SyS-od-Y1K"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="2jT-42-1hz"/>
+                                        <include reference="dDr-Yo-RPZ"/>
+                                        <include reference="8be-WN-pd2"/>
+                                        <include reference="wso-7H-xmI"/>
+                                        <include reference="Om9-7C-2nm"/>
+                                        <include reference="RSb-hZ-Bdd"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2RW-ET-4wM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2xE-nT-fER"/>
+                            <constraint firstItem="2RW-ET-4wM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Mu-ul-24j"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2RW-ET-4wM"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2xE-nT-fER"/>
+                                <exclude reference="4Mu-ul-24j"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="2RW-ET-4wM"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="2xE-nT-fER"/>
+                                <include reference="4Mu-ul-24j"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="403.5" y="300"/>
         </scene>
     </scenes>
 </document>
